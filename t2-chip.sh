@@ -5,9 +5,9 @@ IBRIDGE="$(/usr/sbin/system_profiler SPiBridgeDataType | /usr/bin/grep 'Model Na
 
 if [[ -z "$CPU" ]]; then
 	if [[ "${IBRIDGE}" == "" ]]; then
-    	/bin/echo "<result>None</result>"
+        /bin/echo "<result>None</result>"
 	else
-    	/bin/echo "<result>${IBRIDGE}</result>"
+        /bin/echo "<result>${IBRIDGE}</result>"
     fi
 else
 	/bin/echo "<result>${CPU} (T2 Integrated)</result>"
